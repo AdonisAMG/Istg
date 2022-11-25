@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elimina Tratamiento</title>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/miestilo.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menuniverso.css' %}">
+</head>
+<body>
+<h1>Eliminar tratamiento</h1>
+<a href="{% url 'cita_medica_tratamiento' %}">Cancelar</a>
+<form method="post">{% csrf_token %}
+    <p>¿ Estas Seguro de Eliminar el tratamiento de {{ cita_medica_tratamiento.paciente }}?</p>
+    <input type="submit" value="Confirmar">
+</form>
+</body>
+</html>

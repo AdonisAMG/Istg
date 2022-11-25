@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+   <form action="" method="post">
+       <h1>Acceso al Sistema</h1>
+       <div>
+           {{form.as_p}}
+           {% csrf_token  %}
+       </div>
+       <div>
+           <br>
+           <input type="submit" value="Acceder">
+       </div>
+   </form>
+</body>
+</html>

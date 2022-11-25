@@ -1,0 +1,13 @@
+tupla = ('NO', 'SE', 'COMO', 'HICE', 'LA', 'TAREA', 'PERO', 'MERECE', 'UN', 10)
+
+print("------Datos de la Tupla------")
+print(tupla[9])
+print(tupla[8])
+print(tupla[7])
+print(tupla[6])
+print(tupla[5])
+print(tupla[4])
+print(tupla[3])
+print(tupla[2])
+print(tupla[1])
+print(tupla[0])

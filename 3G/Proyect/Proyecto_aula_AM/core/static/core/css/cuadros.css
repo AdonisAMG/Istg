@@ -1,0 +1,17 @@
+.wrapper {
+    display: grid;
+    margin: 50px auto;
+    width: 90%;
+    background-color: #ccffdd;
+    grid-template-rows: repeat(2, [row-start] 150px [row-end]);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-gap: 25px;
+    /* grid-template-areas: 'box-1 box-2 box-3 box-4' 'box-5 box-6 box-7 box-8'; */
+    /* grid-template-areas: 'box-1 box-2 box-3 box-4''box-5 box-6 box-7 box-8'; */
+}
+
+.wrapper > * {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #000000;
+}

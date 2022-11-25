@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+</head>
+<body>
+<h1>Atención Médica</h1>
+<div class="nav">
+  <nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'inicio' %}">INICIO</a></li>
+			<li><a href="{% url 'cita_medica' %}">CITA MEDICA</a></li>
+			<li><a href="{% url 'tratamiento' %}">TRATAMIENTO</a></li>
+			<li><a href="{% url 'hospital' %}">HOSPITAL</a></li>
+			<li><a href="{% url 'sucursal' %}">SUCURSAL</a></li>
+			<li><a href="{% url 'paciente_lista' %}">PACIENTE</a></li>
+			<li><a href="{% url 'doctor' %}">DOCTOR</a></li>
+     		<li><a href="{% url 'producto' %}">PRODUCTOS</a></li>
+		</ul>
+	</nav>
+</div>
+
+{% block contenidohija %}
+<p> Ivan Emmanuel Valero Castañeda </p>
+<br>
+<img src="{% static 'core/img/yo.jpeg' %}" alt="Yo" style="width:400px;height:300px">
+<br>
+
+
+{% endblock %}
+</body>
+</html>

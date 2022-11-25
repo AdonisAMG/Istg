@@ -1,0 +1,37 @@
+{% extends 'inicio.html' %}
+{% block titulo %} Tratamiento {% endblock %}
+{% block contenidohija %}
+<h1>TRATAMIENTO</h1>
+<a href="{% url 'tratamientoguardar' %}">Agregar informacion</a>
+<!--
+<form action="" method="POST">
+    <label>Buscar por paciente</label>
+    <input type="text" name="producto" value="">
+    <input type="submit" value="Buscar">
+    {% csrf_token %}
+</form>
+-->
+<table border="1">
+    <thead>
+       <tr>
+         <td width="25%"> Paciente</td>
+         <td width="25%"> Producto</td>
+         <td width="25%"> Cantidad</td>
+         <td width="25%"> Tratamiento</td>
+       </tr>
+    </thead>
+    <tbody>
+        {% for presenta in object_list  %}
+        <tr>
+           <td>{{presenta.paciente}}</td>
+           <td>{{presenta.producto}}</td>
+           <td>{{presenta.cantidad}}</td>
+           <td>{{presenta.tratamiento}}</td>
+            <td><a href="{% url 'tratamientomodificar' presenta.id  %}">Editar </a>
+                <a href="{% url 'tratamientoborrar' presenta.id  %}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

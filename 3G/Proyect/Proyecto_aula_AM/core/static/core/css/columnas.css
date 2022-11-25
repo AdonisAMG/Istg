@@ -1,0 +1,56 @@
+#contenedorpie{
+    padding: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#colum1{
+    float: left;
+    padding: 5px;
+    color: black;
+    width: 20%;
+    margin: 5px 10px;
+    text-align: center;
+}
+
+#colum2 {
+    float: left;
+    padding: 5px;
+    color: black;
+    width: 20%;
+    margin: 5px 10px;
+    text-align: center;
+    list-style: none;
+}
+
+#colum2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#colum3{
+    float: left;
+    padding: 5px;
+    color: black;
+    width: 20%;
+    margin: 5px 10px;
+    text-align: center;
+    list-style: none;
+}
+#colum3 a {
+    text-decoration: none;
+    color: black;
+}
+#colum4{
+    float: left;
+    padding: 5px;
+    color: black;
+    width: 20%;
+    margin: 5px 10px;
+    text-align: center;
+    list-style: none;
+}
+#colum4 a {
+    text-decoration: none;
+    color: black;
+}

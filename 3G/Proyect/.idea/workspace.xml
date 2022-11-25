@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d81b5a8-567e-4bb9-9c0c-4f4fb4255e85" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2C5UUmtfLGxxXceHjyUnyi1rXmI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Familia Merchan\PycharmProjects\3G\Proyect" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d81b5a8-567e-4bb9-9c0c-4f4fb4255e85" name="Changes" comment="" />
+      <created>1658091959266</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658091959266</updated>
+      <workItem from="1658091975013" duration="1962000" />
+      <workItem from="1658097679837" duration="12526000" />
+      <workItem from="1658123359932" duration="2727000" />
+      <workItem from="1658126891418" duration="2867000" />
+      <workItem from="1658131834154" duration="1706000" />
+      <workItem from="1658147595766" duration="2456000" />
+      <workItem from="1658276053917" duration="116000" />
+      <workItem from="1658281604270" duration="1014000" />
+      <workItem from="1658982505093" duration="1730000" />
+      <workItem from="1660506152425" duration="149000" />
+      <workItem from="1660506355624" duration="269000" />
+      <workItem from="1661619443334" duration="130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

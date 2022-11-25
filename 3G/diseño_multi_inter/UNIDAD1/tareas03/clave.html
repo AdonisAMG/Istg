@@ -1,0 +1,23 @@
+<form method="POST">
+<label>Contrasenia</label>
+
+<script>
+  function mostrarContrasena(){
+      var tipo = document.getElementById("password");
+      if(tipo.type == "password"){
+          tipo.type = "text";
+      }else{
+          tipo.type = "password";
+      }
+  }
+</script>
+
+<div class="form-row">
+    <div class="col">
+  <input class="form-control" type="password" name="password" id="password">
+</div>
+    <div class="col">
+  <button class="btn btn-primary" type="button" onclick="mostrarContrasena()">Mostrar Contrasenia</button>
+</div>
+  </div>
+</form>

@@ -1,0 +1,35 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block titulo %}
+ QUIENES SOMOS
+{% endblock %}
+{% block contenidohija %}
+<div id="menu">
+ <br>
+</div>
+<div id="contenido">
+ <h1>LECCION DE PROGRAMACION VISUAL</h1>
+ <img src="{% static 'core/img/yo.png' %}" alt="foto" style="width:100px;height:100px;border-radius: 25%">
+ <table FRAME="void" RULES="rows">
+  <tr>
+   <th>NOMBRES:</th>
+   <td>Adonis Alexander</td>
+  </tr>
+  <tr>
+   <th>APELLIDOS:</th>
+   <td>Merchan Guadamud</td>
+  </tr>
+
+  <tr>
+   <th>CURSO:</th>
+   <td>3G</td>
+  </tr>
+
+  <tr>
+   <th>PROFESOR DE MATERIA:</th>
+   <td>Carlos Luis Pazmiño</td>
+  </tr>
+ </table>
+</div>
+
+{% endblock %}

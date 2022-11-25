@@ -1,0 +1,31 @@
+{% extends 'inicio.html' %}
+{% block titulo %} Paciente {% endblock %}
+{% block contenidohija %}
+<h1>PACIENTE</h1>
+<a href="{% url 'pacienteguardar' %}">Agregar Paciente</a>
+<table border="1">
+    <thead>
+        <tr>
+            <td width="20%"> Nombres</td>
+            <td width="20%"> Apellidos</td>
+            <td width="20%"> Numeros de teléfono</td>
+            <td width="20%"> Imagen</td>
+            <td width="20%"> Fecha modificación</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for presenta in object_list  %}
+        <tr>
+            <td>{{presenta.nombres}}</td>
+            <td>{{presenta.apellidos}}</td>
+            <td>{{presenta.nmr_telefono}}</td>
+            <td><img src="{{presenta.imagen.url}}" width="50" height="50"></td>
+            <td>{{presenta.fechamodificacion}}</td>
+            <td><a href="{% url 'pacientemodificar' presenta.id  %}">Editar </a>
+                <a href="{% url 'pacienteeliminar' presenta.id  %}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

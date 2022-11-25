@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MI PRIMERA CORE</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menuUniverso.css' %}">
+
+</head>
+<body>
+<h1>HOLA BIENVENIDO A MI PRIMERA CORE</h1>
+
+<div class="nav">
+  <nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'inicio' %}">INICIO</a></li>
+			<li><a href="{% url 'login' %}">NOTICIAS</a></li>
+			<li><a href="{% url 'deportes' %}">DEPORTES</a></li>
+			<li><a href="{% url 'farandula' %}">FARANDULA</a></li>
+			<li><a href="{% url 'inicioH' %}">PAGINA HERENCIA</a></li>
+			<li><a href="{% url 'contacto' %}">CONTACTO</a></li>
+            <li><a href="{% url 'noticiasListview' %}">NoticiasLv</a></li>
+		</ul>
+	</nav>
+</div>
+
+<img src="{% static 'core/img/slide1.jpg' %}" alt="No se puede cargar">
+{% block contenidohija %}
+{% endblock %}
+<footer class="footer">
+    SISTEMA CON DJANGO MERCHANA DERECHOS RESERVADOS
+</footer>
+</body>
+</html>

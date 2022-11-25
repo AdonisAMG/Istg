@@ -1,0 +1,34 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block contenidohija %}
+
+<h1>CONTACTO</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label>Nombre *</label>
+        <div class="input-group">
+            {{formulario.name}}
+        </div>
+        {{formulario.name.errors}}
+    </div>
+    <div class="form-group">
+        <label>Email *</label>
+        <div class="input-group">
+            {{formulario.email}}
+        </div>
+        {{formulario.email.errors}}
+    </div>
+    <div class="form-group">
+        <label>Mensaje *</label>
+        <div class="input-group">
+            {{formulario.content}}
+        </div>
+        {{formulario.content.errors}}
+    </div>
+    <div class="text-center">
+        <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
+    </div>
+</form>
+{% endblock %}

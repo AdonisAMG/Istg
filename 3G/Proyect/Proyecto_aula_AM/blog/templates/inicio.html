@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block titulo %} INICIO  {% endblock %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/myestilo.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menuniverso.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/columnas.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/contenedor.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/cuadros.css' %}">
+
+
+</head>
+    <body>
+        <div id="contenedor">
+            <div id="cabecera">
+                <img src="{% static 'core/img/logo.png' %}" alt="logo" width="700px" height="250px">
+                <nav class="menuCSS3">
+                    <ul>
+                        <li><a href="{% url 'inicio' %}">INICIO</a></li>ㅤ
+                        <li><a href="{% url 'quienes_somos' %}">QUIENES SOMOS</a></li>ㅤ
+                        <li><a href="{% url 'nuestros_productos' %}">NUESTROS PRODUCTOS</a></li>ㅤ
+                        <li><a href="{% url 'contactanos' %}">CONTANOS</a></li>
+                        <li><a href="{% url 'QUIENES__SOMOS' %}">QUIENES SOMOS(Leccion)</a></li>
+                        <li><a href="{% url 'blog' %}">BLOG</a></li>
+                        <li><a href="{% url 'contacto' %}">CONTACTO</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            {% block contenidohija %}
+            <div id="menu">
+                <aside class="widget inner-padding widget_search">
+                    <h4>¿Qué estás buscando?</h4>
+
+                    <div class="box">
+                        <div class="container-2">
+                            <form action="#">
+                                <span class="icon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                <input type="search" id="search" placeholder="Buscar..." value="">
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div id="contenido">
+
+                {% for presenta in Enviai %}
+                <p>{{presenta.contenido}}</p>
+                <p>{{presenta.fechacreacion}}</p><br><br>
+                {% endfor %}
+
+                <p>
+                    <img src="{% static 'core/img/pan.png' %}" alt="imagen pan" style="float:left;width:150px;height:125px;">
+                    Nos aporta energía gracias a su elevado contenido en hidratos de carbono. Olvida los reconstituyentes y opta por una versión más natural. Los hidratos de carbono son la fuente principal de energía del organismo, sobre todo del cerebro. <br>
+                    Rico en vitaminas y nutrientes. De entre los beneficios de comer pan, este podría ser uno de los más importantes. Contiene hierro, magnesio, potasio, ácido fólico y vitaminas B6 y B2, entre otros componentes. Por ello, ayuda a evitar que asciendan los niveles de azúcar en sangre. Es un alimento ideal para personas diabéticas. <br>
+                    Te ayuda a mejorar el estreñimiento por su contenido en fibra. Sí, el pan blanco también tiene fibra, aunque en menor medida que si el pan es integral. Con su consumo regularás tu tránsito intestinal rápidamente. <br>
+                    Hay un pan especial para cada uno. Las diversas variedades de pan que existen hoy en día –y que constantemente van surgiendo- hacen que todos podamos disfrutar de este súper alimento, incluso aquellas personas con intolerancias y/o alergias. <br>
+                    Ayudará a ser más constante si estás a dieta. Es uno de los beneficios de comer pan más curioso, pero sí, el consumo moderado y equilibrado de pan cubre nuestras necesidades nutricionales de forma que nos será más complicado saltarnos la dieta. Se ha comprobado que una ingesta diaria de 100 gramos ayuda a mantener, incluso a reducir peso más fácilmente que en otras dietas donde no está presente. <br>
+                    <img src="{% static 'core/img/otropan.png' %}" alt="imagen pan" style="float:right;width:150px;height:125px;border-radius: 50%">
+                    Interviene en la prevención de enfermedades crónicas como la diabetes, obesidad, enfermedades cardiovasculares o neurodegenerativas por su contenido en proteína vegetal. <br>
+                    El consumo de pan a diario puede ayudar a frenar el envejecimiento celular al contener propiedades antioxidantes. Además, fortalece el sistema nervioso y fomenta la concentración. <br>
+                    Teniendo en cuenta que la Organización Mundial de la Salud recomienda una ingesta diaria de unos 250 gramos de pan al día, lo importante (como decíamos antes) es cuándo lo consumimos. Lo ideal es repartirlo en las diferentes comidas, sobre todo en las diurnas (desayuno y comida).<br>
+                    Además, siempre deberemos tener en cuenta la combinación de los diferentes alimentos. De esta forma, cumpliremos con las proporciones adecuadas de hidratos de carbono, proteínas, grasas, azúcares, etc…. diarias recomendadas.<br>
+                </p>
+            </div>
+            {% endblock %}
+
+            <div id="pie">
+                <div id="contenedorpie">
+                    <div id="colum1">
+                      © 2022 Panadería Merchan_A
+                    </div>
+                    <div id="colum2">
+                      Ubicacion<li><a href="#">¤</a></li>
+                    </div>
+                    <div id="colum3">
+                      Redes sociales<li><a href="#">F</a> o <a href="#">I</a></li>
+                    </div>
+                    <div id="colum4">
+                      Terminos y condiciones<li><a href="#">TyC</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

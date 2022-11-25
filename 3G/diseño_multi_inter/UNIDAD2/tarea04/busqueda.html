@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Inmobiliaria Lindavista</title>
+
+</head>
+<body>
+    <img src="logo.png" alt="Imagen no subida" style="float:left;width:42px;height:42px;">
+    <h2>Inmobiliaria Lindavista</h2>
+    <hr>
+    <h3>Busqueda de vivienda</h3>
+    <p>
+        Ayudanos a encontrar la vivienda que mejor se ajuste a sus necesidades. Por favor, rellene cuidadosamente el siguiente formulario.
+    </p>
+
+    <fieldset data-role="controlgroup" data-type="horizontal">
+
+        <legend>Datos personales</legend>
+
+
+        <div id="nombre">
+            <label>Nombre:</label>
+            <input type="text" required>
+        </div>
+
+        <div>
+            <label>Edad:</label>
+            <input type="radio" name="gfg" id="gfg1">
+            <label for="gfg1">menos de 20</label>
+            <input type="radio" name="gfg" id="gfg2">
+            <label for="gfg2">de 21 a 30</label>
+            <input type="radio" name="gfg" id="gfg3">
+            <label for="gfg3">de 31 a 40</label>
+            <input type="radio" name="gfg" id="gfg4">
+            <label for="gfg4">mas de 40</label>
+        </div>
+
+        <div>
+        <form action="">
+          <label>Profesion: </label>
+          <input list="profesion" placeholder="Seleccione una profesion" name="profesion">
+          <datalist id="profesion">
+            <option value="Estudiante">
+            <option value="Profesor">
+          </datalist>
+        </form>
+        </div>
+
+    </fieldset>
+
+
+
+    <fieldset data-role="controlgroup" data-type="horizontal">
+
+        <legend>Datos de la vivienda buscada</legend>
+        <div>
+            <label>Dormitorios:</label>
+            <input type="radio" name="gfg" id="gfg1">
+            <label for="gfg1">1</label>
+            <input type="radio" name="gfg" id="gfg2">
+            <label for="gfg2">2</label>
+            <input type="radio" name="gfg" id="gfg3">
+            <label for="gfg3">2</label>
+            <input type="radio" name="gfg" id="gfg3">
+            <label for="gfg3">4</label>
+            <input type="radio" name="gfg" id="gfg3">
+            <label for="gfg3">5</label>
+        </div>
+        <div>
+            <form action="">
+              <label>Tipo </label>
+              <input list="tipo" placeholder="Seleccione una tipo" name="tipo">
+              <datalist id="tipo">
+                <option value="Personal">
+                <option value="Familiar">
+              </datalist>
+            </form>
+        </div>
+
+        <div>
+            <label>Precio($)</label>
+            <input type="radio" name="gfg" id="gfg1">
+            <label for="gfg1">
+                < 100.000
+            </label>
+            <input type="radio" name="gfg" id="gfg2">
+            <label for="gfg2">
+                100.000-200.000
+            </label>
+            <input type="radio" name="gfg" id="gfg3">
+            <label for="gfg3">
+                200.000-300.000
+            </label>
+            <input type="radio" name="gfg" id="gfg3">
+            <label for="gfg3">
+                >300.000
+            </label>
+        </div>
+
+        <div>
+            <label>Zona</label>
+
+                <select multiple="multiple">
+				    <optgroup label="Seleccione una o mas zonas">
+					    <option>Centro</option>
+					    <option>Nervión</option>
+					    <option>Triana</option>
+				    </optgroup>
+			    </select>
+        </div>
+
+        <div>
+            <label>Extras:</label>
+            <input type="checkbox" name="gfg" id="gfg1">
+            <label for="gfg1">Piscina</label>
+            <input type="checkbox" name="gfg" id="gfg2">
+            <label for="gfg2">Jardin</label>
+            <input type="checkbox" name="gfg" id="gfg3">
+            <label for="gfg3">Garaje</label>
+            <input type="checkbox" name="gfg" id="gfg3">
+            <label for="gfg3">Sauna</label>
+        </div>
+
+    </fieldset>
+    <br>
+    <input type="checkbox" name="gfg" id="gfg3">
+    <label for="gfg3">Deseo recibir informacion acerca de futuras promociones de Inmobiliaria Lindavista</label>
+    <br>
+    <button name="button">Enviar formulario</button> <button name="button">Borrar formulario</button>
+
+    <hr>
+    <p>
+        Inmobiliaria Lindavista <br> Construimos un mundo mejor para usted
+    </p>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% extends 'inicio.html' %}
+{% block titulo %} Hospital {% endblock %}
+{% block contenidohija %}
+<h1>HOSPITAL</h1>
+<a href="{% url 'hospitalguardar' %}">Agregar información</a>
+<!--
+<form action="" method="POST">
+    <label>Buscar por nombre</label>
+    <input type="text" name="nombre" value="">
+    <input type="submit" value="Buscar">
+    {% csrf_token %}
+</form>
+-->
+<table border="1">
+    <thead>
+       <tr>
+         <td width="20%"> Nombre</td>
+         <td width="20%"> Ubicación</td>
+         <td width="20%"> Doctor</td>
+         <td width="10%"> Numero de Teléfono</td>
+         <td width="20%"> Paciente</td>
+         <td width="5%"> Fecha Creación</td>
+         <td width="5%"> Estado</td>
+       </tr>
+    </thead>
+    <tbody>
+        {% for presenta in object_list  %}
+        <tr>
+            <td>{{presenta.nombre}}</td>
+            <td>{{presenta.ubicacion}}</td>
+            <td>{{presenta.doctor}}</td>
+            <td>{{presenta.nmr_telefono}}</td>
+            <td>{{presenta.paciente}}</td>
+            <td>{{presenta.fechacreacion}}</td>
+            <td>{{presenta.estado}}</td>
+            <td><a href="{% url 'hospitalmodificar' presenta.id  %}">Editar </a>
+                <a href="{% url 'hospitalborrar' presenta.id  %}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

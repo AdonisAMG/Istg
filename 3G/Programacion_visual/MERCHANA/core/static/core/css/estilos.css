@@ -1,0 +1,21 @@
+p {
+    font-size : 12pt;
+    color:blue;
+    font-family: arial, helvetica, serif;
+    font-weight : normal;
+}
+
+h1 {
+    font-size : 36pt;
+    font-family: verdana, arial, serif;
+    text-decoration : underline;
+    text-align : center;
+    background-color : Teal;
+    color:lightyellow;
+}
+
+body {
+    background-color : #006600;
+    font-family: arial, serif;
+    color : White;
+}

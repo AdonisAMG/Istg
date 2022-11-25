@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/miestilo.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menuniverso.css' %}">
+</head>
+<body>
+<h1>CITA MEDICA</h1>
+<div class="nav">
+  <nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'publico' %}">PUBLICO</a></li>
+            <li><a href="{% url 'login' %}">INICIO</a></li>
+		</ul>
+	</nav>
+</div>
+
+{% block contenidohija %}
+<p> Adonis Alexander Merchan Guadamud </p>
+<img src="{% static 'core/img/yo.jpg' %}" alt="Yo">
+
+{% endblock %}
+</body>
+</html>

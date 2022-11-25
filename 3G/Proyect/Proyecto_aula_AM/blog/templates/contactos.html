@@ -1,0 +1,54 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block titulo %}
+CONTACTOS
+{% endblock %}
+{% block contenidohija %}
+  <div id="menu">
+
+        <h2>buenas tardes</h2>
+
+  </div>
+
+  <div id="contenido">
+
+
+      <h2>Llene el siguiente formulario para que sea atendido(a)</h2>
+
+      <fieldset data-type="horizontal">
+          <legend>Datos personales</legend>
+
+          <div id="nombre">
+              <label>Nombre:</label><br>
+              <label>
+                  <input type="text" required>
+              </label>
+          </div>
+          <div id="telefono">
+              <label>Telefono:</label><br>
+              <label>
+                  <input type="text" required>
+              </label>
+          </div>
+          <div id="correo">
+              <label>Correo:</label><br>
+              <label>
+                  <input type="text" required>
+              </label>
+          </div>
+          <div id="asunto">
+              <label>Asunto:</label><br>
+              <label>
+                  <input type="text" required>
+              </label>
+          </div>
+          <form action="#">
+              Mensaje: <br>
+              <input type="text"><br>
+              <input type="submit" value="Enviar">
+          </form>
+
+      </fieldset>
+
+  </div>
+{% endblock %}

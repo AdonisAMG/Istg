@@ -1,0 +1,29 @@
+.menuCSS3 ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+}
+	.menuCSS3 a {
+		display: block;
+		padding: 1em;
+		background-color: rgba(0, 43, 255, 0.77);
+		text-decoration: none;
+		color: #ffffff;
+	}
+	.menuCSS3 a:hover {
+		background-color: #1d00ff;
+	}
+	.menuCSS3 ul li ul {
+		display: none;
+	}
+	.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+		display: block;
+	}
+
+.nav{
+	width: 960px;
+	text-align:center;
+	margin: 0 auto;
+}
+

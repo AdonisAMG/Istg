@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+</head>
+<body>
+
+{% for presenta in Enviablog %}
+<h1>{{presenta.titulo}}</h1><br>
+<p>{{presenta.contenido}}</p><br>
+<h4>{{presenta.fechacreacion}}</h4><br><br>
+{% endfor %}
+</body>
+</html>

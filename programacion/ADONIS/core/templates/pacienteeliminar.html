@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Paciente</title>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+</head>
+<body>
+<h1>Eliminar Paciente</h1>
+<a href="{% url 'paciente_lista' %}">Cancelar</a>
+<form method="post">{% csrf_token %}
+    <p>¿ Estas Seguro de Eliminar {{ object }}?</p>
+    {{ form }}
+    <input type="submit" value="Confirmar">
+</form>
+</body>
+</html>

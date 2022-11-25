@@ -1,0 +1,19 @@
+#contenedor {
+  width: 700px;
+}
+#cabecera {
+}
+#menu {
+  float: left;
+  width: 100px;
+}
+#contenido {
+  float: left;
+  width: 500px;
+}
+#pie {
+  clear: both;
+}
+#buscar {
+  width: 100px;
+}

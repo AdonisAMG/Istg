@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vistas de Clase</title>
+</head>
+<body>
+<h1>Modificar Noticia Con Clases</h1>
+<a href="{% url 'noticiasListview' %}">Cancelar</a>
+<form action="" enctype="multipart/form-data" method="post">
+   {{ form.as_p }}
+   {% csrf_token %}
+   <input type="submit" value="Guardar">
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+p {
+    font-size : 12pt;
+    color:black;
+    font-family: "Comic Sans MS";
+    font-weight : normal;
+    text-align: justify;
+}
+h1 {
+    font-size : 36pt;
+    font-family: "Comic Sans MS";
+    text-align : center;
+    color: #002aff;
+}
+h3 {
+    font-size : 20pt;
+    margin: 1px;
+    font-family: "Comic Sans MS";
+    text-align : center;
+    color: #000000;
+}
+body {
+    background-color : #ece2fc;
+    font-family : "Comic Sans MS";
+    color :black;
+    width: 50%;
+}
+img{
+    display: block;
+    margin: 5px auto;
+    justify-content: center;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    text-align : center;
+}
+
+.container-2 input#search{
+  width: 90px;
+  height: 25px;
+  background: white;
+  border: 1px;
+  font-size: 10pt;
+  float: left;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: #000000;
+
+}

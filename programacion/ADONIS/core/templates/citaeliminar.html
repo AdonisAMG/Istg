@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Cita</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+</head>
+<body>
+<h1>Eliminar Cita Medica</h1>
+<a href="{% url 'cita_medica' %}">Cancelar</a>
+<form method="post">{% csrf_token %}
+    <p>¿ Estas Seguro de Eliminar la cita de {{cita_medica.paciente}}?</p>
+    <input type="submit" value="Confirmar">
+</form>
+</body>
+</html>

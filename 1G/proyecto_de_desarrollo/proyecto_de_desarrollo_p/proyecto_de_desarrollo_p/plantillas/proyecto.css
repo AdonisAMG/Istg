@@ -1,0 +1,29 @@
+body {
+    background-color: rgba(104, 241, 104, 0.44);
+}
+.ingles {
+  background-color: rgba(61, 161, 63, 0.42);
+  border: 2px dashed skyblue;
+  padding: 3px;
+}
+h1 {
+    font-family:Comic Sans MS, cursive;
+    color:blue;
+    margin: 5px;
+    padding: 10px;
+    border:10px dotted #03c603;
+    text-align: center;
+}
+h2 {
+    font-family: Comic Sans MS,cursive;
+    color: black;
+    text-align: center;
+}
+h3 {
+    color: black;
+    font-family:Comic Sans MS, cursive;
+}
+a {
+    color: rgb(72, 54, 180);
+    font-family:Comic Sans MS, cursive;
+}

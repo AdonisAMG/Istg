@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}   {% endblock %} --PAPA</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menuUniverso.css' %}">
+
+</head>
+<body>
+<h1>PAGINA CON HERENCIA</h1>
+<h6>MERCHAN GUADAMUD ADONIS ALEXANDER 3G </h6>
+
+
+<nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'inicio' %}">INICIO</a></li>
+			<li><a href="{% url 'noticiasH' %}">NOTICIASH</a></li>
+			<li><a href="{% url 'deportesH' %}">DEPORTESH</a></li>
+			<li><a href="{% url 'farandulaH' %}">FARANDULAH</a></li>
+			<li><a href="{% url 'inicioH' %}">PAGINA HERENCIA</a></li>
+			<li><a href="{% url 'contacto' %}">CONTACTO</a></li>
+		</ul>
+</nav>
+
+
+<img src="{% static 'core/img/slide1.jpg' %}" alt="No se puede cargar">
+{% block contenidohija %}  {% endblock %}
+<footer class="footer">
+    SISTEMA CON DJANGO MERCHANA DERECHOS RESERVADOS
+</footer>
+
+</body>
+</html>

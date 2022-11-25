@@ -1,0 +1,38 @@
+{% extends 'inicio.html' %}
+
+{% block titulo %}Pestaña de Noticias   {% endblock %}
+
+{% block contenidohija %}
+<h1>CRUD CON VISTAS DE CLASES</h1>
+<a href="{% url 'noticiasCreateview' %}">Agregar Noticias</a>
+<form action="" method="POST">
+    <label>Buscar Por Titulo</label>
+    <input type="text" name="titulo" value="">
+    <input type="submit" value="Buscar">
+    {% csrf_token %}
+</form>
+<table border="1">
+   <thead>
+       <tr>
+         <td width="10%"> Titulo</td>
+         <td width="60%"> Contenido</td>
+           <td width="10%">Imagenes</td>
+           <td width="30%">Opciones</td>
+       </tr>
+   </thead>
+    <tbody>
+        {% for presenta in object_list  %}
+        <tr>
+           <td>{{presenta.titulo }}</td>
+           <td>{{presenta.contenido}}</td>
+           <td><img src="{{presenta.imagen.url}}" width="50" height="50"></td>
+            <td><a href="{% url 'noticiasUpdateView' presenta.id  %}">Editar </a>
+                <a href="{% url 'noticiasDeleteview' presenta.id  %}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+{% endblock %}

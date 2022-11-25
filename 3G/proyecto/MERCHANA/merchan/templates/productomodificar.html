@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar Producto</title>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/miestilo.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menuniverso.css' %}">
+</head>
+<body>
+<h1>Modificar Producto</h1>
+<a href="{% url 'producto' %}">Cancelar</a>
+<form action="" enctype="multipart/form-data" method="post">
+   {{ form.as_p }}
+   {% csrf_token %}
+   <input type="submit" value="Guardar">
+</form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% extends 'inicio.html' %}
+{% block titulo %} Cita Medica {% endblock %}
+{% block contenidohija %}
+<h1>CITA MEDICA</h1>
+<a href="{% url 'citaguardar' %}">Agregar Cita</a>
+<!--
+<form action="" method="POST">
+    <label>Buscar Por paciente</label>
+    <input type="text" name="paciente" value="">
+    <input type="submit" value="Buscar">
+    {% csrf_token %}
+</form>
+-->
+<table border="1">
+    <thead>
+        <tr>
+            <td width="20%"> Doctor</td>
+            <td width="20%"> Paciente</td>
+            <td width="20%"> Motivo</td>
+            <td width="20%"> Hospital</td>
+            <td width="20%"> Sucursal</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for presenta in object_list  %}
+        <tr>
+           <td>{{presenta.doctor}}</td>
+           <td>{{presenta.paciente}}</td>
+           <td>{{presenta.motivo}}</td>
+           <td>{{presenta.hospital}}</td>
+           <td>{{presenta.sucursal}}</td>
+            <td><a href="{% url 'citamodificar' presenta.id  %}">Editar </a>
+                <a href="{% url 'citaborrar' presenta.id  %} " >Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+</body>
+</html>

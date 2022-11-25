@@ -1,0 +1,88 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block titulo %}
+NUESTROS PRODUCTOS
+{% endblock %}
+{% block contenidohija %}
+  <div id="menu">
+
+        <h2>buenas tardes</h2>
+
+  </div>
+
+  <div id="contenido">
+      <p></p>
+    <h1>Nuestros productos</h1>
+    <div class="wrapper">
+
+      <div class="one">
+
+        {% for presentap in Enviap %}
+        <img src="{{presentap.imagen.url}}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>{{presentap.nombre}}</h3><br>
+        {{presentap.contenido}}
+        {% endfor %}
+      </div>
+
+
+      <div class="one">
+         <img src="{% static 'core/img/panmixto.png' %}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>Pan mixto</h3><br>
+        Precio=$$<br>
+        receta=$$
+      </div>
+
+      <div class="two">
+        <img src="{% static 'core/img/pandulce.png' %}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>Pan de dulce</h3><br>
+        Precio=$$<br>
+        receta=$$
+      </div>
+
+      <div class="three">
+        <img src="{% static 'core/img/pansal.png' %}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>Pan de sal</h3><br>
+        Precio=$$<br>
+        receta=$$
+      </div>
+
+      <div class="four">
+        <img src="{% static 'core/img/panintegral.png' %}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>Pan integral</h3><br>
+        Precio=$$<br>
+        receta=$$
+      </div>
+
+      <div class="five">
+        <img src="{% static 'core/img/supan.png' %}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>Pan supan</h3><br>
+        Precio=$$<br>
+        receta=$$
+      </div>
+
+      <div class="six">
+        <img src="{% static 'core/img/panchocolate.png' %}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>Pan con chocolate</h3><br>
+        Precio=$$<br>
+        receta=$$
+      </div>
+
+      <div class="seven">
+        <img src="{% static 'core/img/empanadaqueso.png' %}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>Empanada con queso</h3><br>
+        Precio=$$<br>
+        receta=$$
+      </div>
+
+      <div class="eight">
+        <img src="{% static 'core/img/carasucia.png' %}" alt="imagen pan" style="float:right;width:100px;height:100px;border-radius: 25%">
+        <h3>Pan cara sucia </h3><br>
+        Precio=$$<br>
+        receta=$$
+      </div>
+
+    </div>
+  </div>
+
+
+{% endblock %}

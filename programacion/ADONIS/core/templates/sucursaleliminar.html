@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Sucursal</title>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+</head>
+<body>
+<h1>Eliminar Sucursal</h1>
+<a href="{% url 'sucursal' %}">Cancelar</a>
+<form method="post">{% csrf_token %}
+    <p>¿ Estas Seguro de Eliminar {{ object }}?</p>
+    {{ form }}
+    <input type="submit" value="Confirmar">
+</form>
+</body>
+</html>
