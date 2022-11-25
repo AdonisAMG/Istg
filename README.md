@@ -1,1 +1,1 @@
-Todas mis tareas hechas en el entranscurso de la carrera, x ahora
+Todas mis tareas hechas en el transcurso de la carrera, x ahora
